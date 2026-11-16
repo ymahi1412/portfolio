@@ -1,0 +1,102 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f3f9;
+  color: #252746;
+}
+
+.container {
+  max-width: 750px;
+  margin: 60px auto;
+  padding: 35px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  color: #5546a5;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.container > p {
+  color: #777;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+input {
+  flex: 1;
+  min-width: 180px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+button {
+  padding: 11px 17px;
+  background: #6554bd;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #493b94;
+}
+
+h2 {
+  margin-bottom: 18px;
+  color: #333;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+  background: #f5f3ff;
+  border-radius: 8px;
+}
+
+.user button {
+  background: #dc5262;
+}
+
+.user button:hover {
+  background: #b93648;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 20px;
+    padding: 22px;
+  }
+
+  .user {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
